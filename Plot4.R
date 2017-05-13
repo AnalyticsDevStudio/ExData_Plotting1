@@ -32,7 +32,9 @@ ylim = range(c(gap,sm1,sm2,sm3))
 plot(time, sm1, type = "l", xlab="", ylab="Energy Sub Metering", ylim = ylim, col = "gray")
 lines(time, sm2, col = "red")
 lines(time, sm3, col = "blue")
+legend("topright", lty = 1, col = c("gray","red", "blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 plot(time, grp, type = "l", xlab="Date Time", ylab="Global Reactive Power")
 
 # close PNG device
 dev.off()
+
